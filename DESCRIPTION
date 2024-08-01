@@ -12,3 +12,5 @@ RoxygenNote: 7.0.0
 Imports: 
     ChemmineOB
 biocViews:
+URL: https://github.com/Aariq/testpkg
+BugReports: https://github.com/Aariq/testpkg/issues
