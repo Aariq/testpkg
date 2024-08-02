@@ -10,7 +10,7 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.0
 Imports: 
-    ChemmineOB
+    ChemmineOB (>= 1.43.1)
 biocViews:
 URL: https://github.com/Aariq/testpkg
 BugReports: https://github.com/Aariq/testpkg/issues
