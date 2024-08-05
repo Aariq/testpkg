@@ -45,6 +45,7 @@ jobs:
           r-version: ${{ matrix.config.r }}
           http-user-agent: ${{ matrix.config.http-user-agent }}
           use-public-rspm: true
+          extra-repositories: https://git.bioconductor.org/packages/ChemmineOB
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
