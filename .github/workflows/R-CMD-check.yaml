@@ -45,12 +45,13 @@ jobs:
           r-version: ${{ matrix.config.r }}
           http-user-agent: ${{ matrix.config.http-user-agent }}
           use-public-rspm: true
-          extra-repositories: https://git.bioconductor.org/packages/ChemmineOB
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           pak-version: devel
-          extra-packages: any::rcmdcheck
+          extra-packages: |
+            any::rcmdcheck
+            git::https://git.bioconductor.org/packages/ChemmineOB
           needs: check
 
       - uses: r-lib/actions/check-r-package@v2
