@@ -52,7 +52,7 @@ jobs:
           extra-packages: |
             any::rcmdcheck
           needs: check
-          upgrade: false
+          upgrade: FALSE
 
       - uses: r-lib/actions/check-r-package@v2
         with:
