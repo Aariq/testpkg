@@ -51,8 +51,8 @@ jobs:
           pak-version: devel
           extra-packages: |
             any::rcmdcheck
-            git::https://git.bioconductor.org/packages/ChemmineOB
           needs: check
+          upgrade: false
 
       - uses: r-lib/actions/check-r-package@v2
         with:
